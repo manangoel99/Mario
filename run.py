@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 from Board import Board
 from Character import char, Mario
