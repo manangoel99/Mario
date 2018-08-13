@@ -1,3 +1,4 @@
+import os
 from Global import *
 
 class Board():
@@ -20,6 +21,7 @@ class Board():
             self.canvas[NUM_ROWS - NUM_STONE_ROWS - 1][i] = '_'
     
     def draw(self):
+        os.system("tput reset")
         for i in self.canvas:
             for j in i:
                 print(j,end="")

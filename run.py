@@ -1,9 +1,11 @@
 import os
 from Board import Board
-from Character import char
+from Character import char, Mario
 
 board = Board()
-mario = char(board.canvas, type="mario")
+mario = Mario(board.canvas)
+
+begin = 0
 
 x = 'i'
 
@@ -12,4 +14,5 @@ while x != 'q':
     #print("HAHA", board.canvas[mario.pos[0]])
     #mario.draw(board.canvas)
     board.draw()
-    x = input()
+    mario.move_mario(board, board.canvas)
+    #x = input()
