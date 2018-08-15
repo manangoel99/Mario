@@ -86,7 +86,7 @@ class Mario(char):
                     canvas[self.pos[0] + 2][self.pos[1]] = ' '
                     #canvas[self.pos[0] + 1][self.pos[1] - 1] = ' '
                     board.draw()
-                    time.sleep(0.1)
+                    time.sleep(0.05)
 
                 for i in range(1, 10):
                     self.pos[0] += 1
@@ -101,7 +101,7 @@ class Mario(char):
                     canvas[self.pos[0]][self.pos[1] - 1] = ' '
                     #canvas[self.pos[0] + 1][self.pos[1] - 1] = ' '
                     board.draw()
-                    time.sleep(0.1)
+                    time.sleep(0.05)
 
             if self.direction == "left":
                 
@@ -119,7 +119,7 @@ class Mario(char):
                     canvas[self.pos[0] + 2][self.pos[1] + 1] = ' '
                     #canvas[self.pos[0] + 1][self.pos[1] - 1] = ' '
                     board.draw()
-                    time.sleep(0.1)
+                    time.sleep(0.05)
                 
                 
                 for i in range(1, 10):
@@ -135,5 +135,5 @@ class Mario(char):
                     canvas[self.pos[0] - 1][self.pos[1] + 1] = ' '
                     #canvas[self.pos[0] + 1][self.pos[1] - 1] = ' '
                     board.draw()
-                    time.sleep(0.1)
+                    time.sleep(0.05)
                 
